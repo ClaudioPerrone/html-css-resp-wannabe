@@ -130,7 +130,8 @@ img {
  @media screen and (min-width: 769px) and (max-width: 1160px)
 {
     /* LAYOUT */
-    .container {
+    .container
+    {
         width: 100%; 
     }
 }
@@ -145,19 +146,48 @@ img {
 }
 
 @media screen and (max-width: 480px)
-{
-    /* LESSONS SECTION */
-    .lessons .col
+{     
+    /* LAYOUT */
+    .container
     {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        width: 100%; 
     }
 
-    .row:last-child
+    /* LESSONS SECTION */
+    .row
     {
-        display: flex;
+        flex-direction: column;
         justify-content: center;
-        flex-wrap: wrap;
+        align-items: center;
+    }
+    .lessons .col, .steps .col
+    {
+        width: 80%;
+        padding: 40px 0;
+    }
+
+    /* STEPS SECTION */
+    .steps
+    {
+        margin: 0px;
+        color: #232946;
+        background: #eebbc3;
+    }
+
+    /* WHY US SECTION */
+    .why-us
+    {
+        background: #222222;
+        padding: 3em 0;
+        margin-bottom: 0;
+    }
+    .why-us .col-left
+    {
+        width: 100%;
+    }
+    .why-us .col-right
+    {
+        width: 85%;
+        padding-top: 60px;
     }
 }
